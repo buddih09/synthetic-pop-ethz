@@ -1,0 +1,22 @@
+# General pipeline settings
+working_directory: /home/tchervec/Documents/data/switzerland/cache
+flowchart_path: /home/tchervec/Documents/data/switzerland/flowchart.json
+dryrun: false
+
+# Requested stages
+run:
+    - synthesis.population.enriched
+
+# These are configuration options that we use in the pipeline
+config:
+    threads: 4
+    random_seed: 0
+    hot_deck_matching_runners: 2
+    disable_progress_bar: false
+    java_memory: 10G
+    input_downsampling: 0.01
+    enable_scaling: true
+    scaling_year: 2020
+    use_freight: true
+    hafas_date: 01.10.2018
+    data_path: /home/tchervec/Documents/data/switzerland/data

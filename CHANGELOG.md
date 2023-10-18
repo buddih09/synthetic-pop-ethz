@@ -1,0 +1,53 @@
+**3.0.0**
+- Facilities attribute `offers_service` changed to `offers_other`
+- Determine secondary activity locations directly in `python`
+- Assign all work activities to the same location (i.e. one with longest duration)
+- Separate work and education commute dataframes
+- Add `isFreight` attribute to all agents in `population.xml`
+- Update python requirements
+- Updated statistical matching to most recent version
+- Duplicate agents after IPU using Truncate-Replicate-Sample method
+- Use WMAPE and WMAE as IPU convergence criteria
+- Update to `java 11.0.x`
+- Update environment set-up on servers
+- Refactor IPU fitting
+- Impute canton id directly from shapefile
+- Added config elements for generating flowchart
+- Use new pyproj syntax without `init:`
+- Port code to use `synpp`
+
+**2.0.0**
+
+- Update Maven dependency
+- Update eqasim to 1.0.5
+- Upgrade to new pt2matsim version to allow selecting of HAFAS date
+- Store STATPOP and MZ ids as agents attributes
+- Fix Java /tmp bug in shared environments (IVT servers)
+- Make possible to run pipeline in VM, add instructions
+- Added ÖV Güteklasse for home locations
+- Remove imputation of ÖV Güteklasse for activities
+- Use code for ÖV Güteklasse from eqasim-java
+
+- Use modular mode choice (Update to eqasim v1.0.1)
+- Use fixed eqasim version
+- Change activity type "errand" to "other"
+- Sample freight departure times from realistic distribution
+- Use all available NUTS data
+- Add subpopulation for freight agents
+- Scale freight demand to ARE reference projections
+- Add freight population based on GTE and GQGV survey
+- Write canton id -1 if value is NaN
+- Set up CI execution environment using the setup/ scripts
+- Change from Oracle JDK 8 to Open JDK 12
+- Make output directory configurable
+- Set default scaling year values
+- Put in 2015 totals from BfS
+- Parallelize scaling
+- Scale STATPOP to both projected household and person-level control totals
+- Add canton ID to households
+- Add car_passenger mode
+- Fix municipality type and canton imputation
+- Write out detailed information from MZ for PT trips
+- Fix education location
+- Add SP region and municipality type of household
+- Change municipality type to 2014 ARE Gemeindetypologie
